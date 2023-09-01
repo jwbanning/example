@@ -38,7 +38,6 @@
 									],
 									"variable": [
 										{
-											"id": "8145b0c8-5723-48b8-9972-4c019cd63997",
 											"key": "spacecraftId",
 											"value": "<string>"
 										}
@@ -68,7 +67,6 @@
 											],
 											"variable": [
 												{
-													"id": "8145b0c8-5723-48b8-9972-4c019cd63997",
 													"key": "spacecraftId",
 													"value": "<string>"
 												}
@@ -109,7 +107,6 @@
 											],
 											"variable": [
 												{
-													"id": "8145b0c8-5723-48b8-9972-4c019cd63997",
 													"key": "spacecraftId",
 													"value": "<string>"
 												}
@@ -150,7 +147,6 @@
 											],
 											"variable": [
 												{
-													"id": "8145b0c8-5723-48b8-9972-4c019cd63997",
 													"key": "spacecraftId",
 													"value": "<string>"
 												}
@@ -198,9 +194,36 @@
 			}
 		]
 	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1fae351e-7f6c-4e91-b5ff-71a8d417fcd6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "de880466-7e00-4aaa-b1d5-10b06d9d779a",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "bb4adc2b-996e-45af-98e7-0bbd96f2c2f4",
+			"id": "6ef6c2e4-b287-45b1-afeb-9e6c9e9153bd",
 			"key": "baseUrl",
 			"value": "/"
 		}
